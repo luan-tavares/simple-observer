@@ -1,0 +1,34 @@
+{
+    "name": "luan-tavares/simple-observer",
+    "license": "MIT",
+    "description": "Simple Observer with subject trait",
+    "keywords": ["api","integration"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Luan Tavares Lourenço",
+            "email": "luan.tavares.lourenco@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LTL\\Observer\\": ["src/"]
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "larapack/dd": "1.*",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "deploy-tag": [
+            "LTL\\Observer\\Deploy\\DeployTag::execute"
+        ],
+        "deploy": [
+            "LTL\\Observer\\Deploy\\Deploy::execute"
+        ]
+    }
+}
